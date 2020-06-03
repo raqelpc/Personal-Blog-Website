@@ -1,0 +1,17 @@
+@import "colors.css";
+
+:root {
+    font-family: 'Abel', sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+a {
+    color: var(--text-color);
+}
+
+a:hover {
+    color: var(--accent-color);
+}

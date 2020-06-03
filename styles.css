@@ -1,0 +1,51 @@
+@import "assets/css/base.css";
+@import "assets/css/colors.css";
+@import "assets/css/header.css";
+@import "assets/css/footer.css";
+@import "assets/css/card.css";
+
+body {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 1fr 7.5vh;
+    grid-template-areas: "header" "main" "footer";
+    margin: 0;
+}
+
+main {
+    display: grid;
+    grid-area: main;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "nav card card card";
+}
+
+nav {
+    grid-area: nav;
+    border-right: 1px dashed var(--text-color);
+    margin: 1em;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 8px 0;
+}
+
+nav ul li a:hover {
+    border-bottom: 5px solid var(--accent-color);
+}
+
+.container {
+    grid-area: card;
+}
