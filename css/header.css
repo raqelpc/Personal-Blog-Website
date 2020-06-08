@@ -1,25 +1,65 @@
 @import "colors.css";
 
-header {
-    grid-area: header;
+/* header {
     display: flex;
+    grid-area: header;
     align-items: center;
     background-color: #FFF;
     padding: 0 1em;
     color: var(--text-color);
-    text-transform: uppercase;
     box-shadow: 0 1px 20px 0 rgba(46, 61, 73, .2);
 }
 
-header a {
-    color: var(--primary-color);
+.blog-header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    color: var(--text-color);
+    justify-content: center;
     text-decoration: none;
+    text-align: center;
 }
 
-.main-postcard {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url("../images/wallpapper.jpg") ;
-    background-size: cover;
+header a {
+    color: var(--text-color);
+    text-decoration: none;
+    text-align: center;
+}
+ */
+
+header, .blog-header {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 90px;
+  padding: 0px;
+}
+
+.blog-title h1 {
+  align-self: center;
+  font-size: 2em;
+  justify-self: center;
+  padding: 1em;
+}
+
+.blog-title {
+  display: flex;
+}
+
+nav ul li {
+  align-self: center;
+  flex-direction: row-reverse;
+  padding-right: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  padding: 10px;
+  text-decoration: none;
 }

@@ -1,0 +1,10 @@
+@import "colors.css";
+
+main {
+    display: grid;
+    grid-area: main;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "nav card card card";
+    padding: 2em;
+}

@@ -1,0 +1,47 @@
+@import "css/base.css";
+@import "css/colors.css";
+@import "css/header.css";
+@import "css/footer.css";
+@import "css/card.css";
+@import "css/main.css";
+@import "css/hero.css";
+
+
+body {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "header" "hero" "main" "footer";
+    margin: 0;
+    font-family: 'Abel', sans-serif;
+}
+
+/* nav {
+    grid-area: nav;
+    border-right: 1px solid var(--text-color);
+    margin: 1em;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 8px 0;
+}
+
+nav ul li a:hover {
+    border-bottom: 5px solid var(--accent-color);
+} */
+
+.container {
+    grid-area: card;
+}

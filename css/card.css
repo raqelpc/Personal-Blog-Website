@@ -1,0 +1,31 @@
+@import "base.css";
+@import "colors.css";
+@import "buttons.css";
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.14), 0 12px 4px -8px rgba(0, 0, 0, 0.12), 0 4px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+}
+
+.card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1em;
+}
+
+.card h2 {
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
