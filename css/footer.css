@@ -1,10 +1,14 @@
 footer {
-    display: grid;
-    grid-area: footer;
-    align-content: end;
-    justify-content: center;
-    background-color: #FFF;
-    padding: 1.5em;
-    box-shadow: 0 1px 20px 0 rgba(46, 61, 73, .2);
+  display: grid;
+  grid-area: footer;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  background-color: #fff;
+  padding: 1em;
+  box-shadow: 0 1px 20px 0 rgba(46, 61, 73, 0.2);
 }
 
+.text {
+  display: flex;
+  justify-content: space-evenly;
+}

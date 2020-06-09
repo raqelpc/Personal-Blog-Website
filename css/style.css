@@ -1,0 +1,19 @@
+@import "base.css";
+@import "colors.css";
+@import "header.css";
+@import "footer.css";
+@import "card.css";
+@import "main.css";
+@import "hero.css";
+
+
+body {
+    display: grid;
+    height: 100%;
+    width: 100vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "header" "hero" "main" "footer";
+    margin: 0;
+    font-family: 'Abel', sans-serif;
+}
