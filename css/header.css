@@ -28,7 +28,7 @@
 }
 
 .nav-header a {
-  font-size: 1.2em;
+  font-size: 1.1em;
   padding: 20px 8px;
   text-decoration: none;
 }
@@ -114,10 +114,5 @@
 
   .nav-header ul {
     padding-left: 4.25em;
-  }
-
-  .nav-header a {
-    font-size: 1.2em;
-    text-decoration: none;
   }
 }
