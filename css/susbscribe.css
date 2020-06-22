@@ -1,0 +1,42 @@
+@import "base.css";
+@import "colors.css";
+@import "buttons.css";
+
+.subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--grey-color);
+}
+
+.subscribe-section {
+    padding: 4em 0;
+    text-align: center;
+}
+
+form {
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 20em;
+    grid-gap: 2em;
+}
+
+form input {
+    padding: 1em 1em;
+    border: 1px var(--text-color) solid;
+    border-radius: 16px;
+}
+
+.subscribe-section button {
+    margin: 2em 0;
+    background: var(--grey-color);
+    color: var(--primary-color);
+    border: 2px var(--primary-color) solid;
+}
+
+.subscribe-section button:hover {
+    background: var(--primary-color);
+    color: var(--fill-color);
+    transition: bottom 0.05s ease-in;
+    cursor: pointer;
+}

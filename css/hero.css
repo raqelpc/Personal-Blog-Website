@@ -47,8 +47,8 @@
   }
   
   .hero h2 {
-    font-size: 1em;
-    padding: 0 15px;
+    font-size: 1.3em;
+    padding: 0 20px;
   }
 
 }
@@ -65,13 +65,14 @@
   }
   
   .hero h2 {
-    font-size: 1.2em;
+    font-size: 1.5em;
     padding: 0 30px;
   }
 
   @media(min-width: 901px) {
     
     .hero h2 {
+      font-size: 1.7em;
       padding: 0 30px;
     }
 
