@@ -9,7 +9,7 @@ article {
 }
 
 .article {
-    margin: 4em 0;
+    margin: 2em 0;
     font-size: 0.8em;
 }
 
@@ -35,30 +35,42 @@ article {
     color: var(--primary-color);
 }
 
+figcaption {
+    margin: 0;
+    font-size: 0.8em;
+}
+
+.article img {
+    width: 30em;
+    height: 50%;
+}
+
 .reference:hover {
     text-decoration: underline;
     color: var(--primary-color);
 }
 
-blockquote {
-    padding-left: 2em;
-}
-
-blockquote footer {
-    margin-bottom: 2em;
-}
-
 
 /* Media Queries for medium screens */
-@media (min-width: 321px) and (max-width: 900px) {
+
+@media(max-width: 320px) {
+
     article {
         grid-gap: 3em;
-        padding: 4em 2em;
+        padding: 2em 2em;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 900px) {
+
+    article {
+        grid-gap: 3em;
+        padding: 3em 3em;
     }
 
-    article img {
+    .article img {
         width: 20em;
-        height: 20em;
+        height: 20%;
     }
 
     .article {
@@ -70,11 +82,6 @@ blockquote footer {
     article {
         grid-gap: 3em;
         padding: 4em 6em;
-    }
-
-    article img {
-        width: 22em;
-        height: 22em;
     }
 
     .article {
